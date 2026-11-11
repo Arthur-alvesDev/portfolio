@@ -591,90 +591,7 @@ h1 {
   margin-top: 22px !important;
 }
 
-/* PROJETOS */
 
-.project-grid {
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  gap: 18px;
-}
-
-.project-card {
-  background: var(--panel);
-  border: 1px solid var(--line);
-  overflow: hidden;
-  transition: .25s;
-}
-
-.project-card:hover {
-  transform: translateY(-5px);
-  border-color: var(--green2);
-  box-shadow: 0 12px 30px #0004;
-}
-
-.project-art {
-  height: 150px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-  font-family: "Press Start 2P";
-  font-size: 12px;
-  color: #f0f7e8;
-  text-shadow: 3px 3px #000;
-  background-image: linear-gradient(135deg,#315e2c,#172817);
-}
-
-.project-art span {
-  font-size: 42px;
-  filter: drop-shadow(4px 5px #172817);
-}
-
-.food-art {
-  background: linear-gradient(135deg,#795d37,#293b22);
-}
-
-.bus-art {
-  background: linear-gradient(135deg,#315b60,#172d31);
-}
-
-.database-art {
-  background: linear-gradient(135deg,#4d5a39,#20291e);
-}
-
-.project-content {
-  padding: 22px;
-}
-
-.project-type {
-  font-size: 8px;
-}
-
-.project-content h3 {
-  margin: 8px 0;
-  font-size: 16px;
-}
-
-.project-content p {
-  color: var(--muted);
-  font-size: 11px;
-  min-height: 58px;
-}
-
-.tags {
-  display: flex;
-  gap: 7px;
-  margin-top: 15px;
-  flex-wrap: wrap;
-}
-
-.tags span {
-  font-size: 9px;
-  padding: 4px 8px;
-  color: var(--lime);
-  background: #2a4027;
-  border: 1px solid #3d6335;
-}
 
 /* MISSÕES */
 
@@ -972,3 +889,307 @@ footer small {
     font-size: 8px;
   }
 }
+
+/* FOTO DE PERFIL */
+
+
+/* ===== SEÇÃO SOBRE MIM ===== */
+
+.about .about-grid {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
+    gap: 40px !important;
+    width: 100% !important;
+}
+
+/* Coluna esquerda: foto */
+.about .avatar-panel {
+    flex: 0 0 340px !important;
+    width: 340px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+}
+
+/* Moldura */
+.about .avatar-frame {
+    width: 100% !important;
+    height: 400px !important;
+    padding: 8px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/* Imagem */
+.about .avatar {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.about .avatar img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center 20%;
+}
+
+/* Status abaixo da foto */
+.about .status {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Coluna direita: apresentação */
+.about .about-text {
+    flex: 1 1 0 !important;
+    min-width: 0 !important;
+    width: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.about .about-text p {
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* Informações */
+.about .info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+    margin-top: 25px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .about .about-grid {
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+
+    .about .avatar-panel {
+        flex: none !important;
+        width: 100% !important;
+        max-width: 300px;
+    }
+
+    .about .avatar-frame {
+        height: 350px !important;
+    }
+
+    .about .about-text {
+        width: 100% !important;
+    }
+
+    .about .info-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+/* ================================
+   PROJETOS EM DESTAQUE
+================================ */
+
+.projects {
+    padding: 100px 7%;
+    background: #0b110c;
+    min-height: 600px;
+}
+
+.projects h2 {
+    text-align: center;
+    color: #f1f5ed;
+    font-size: 38px;
+    margin-bottom: 12px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.projects h2 span {
+    color: #75db4b;
+}
+
+.projects-container {
+    max-width: 1100px;
+    margin: 45px auto 0;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px;
+}
+
+/* CARTÃO */
+
+.project-card {
+    background: #17221a;
+    border: 1px solid #293b2b;
+    border-radius: 10px;
+    overflow: hidden;
+
+    transition: .35s ease;
+    position: relative;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    border-color: #75db4b;
+
+    box-shadow: 0 15px 35px #00000070;
+}
+
+/* CABEÇALHO DO CARTÃO */
+
+.project-image {
+    height: 170px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    background: linear-gradient(
+        135deg,
+        #28482c,
+        #142719
+    );
+
+    border-bottom: 1px solid #354d36;
+}
+
+.project-card:nth-child(2) .project-image {
+    background: linear-gradient(
+        135deg,
+        #24494b,
+        #142c2e
+    );
+}
+
+.project-card:nth-child(3) .project-image {
+    background: linear-gradient(
+        135deg,
+        #414d35,
+        #20291d
+    );
+}
+
+.project-image h3 {
+    color: #ffffff;
+    font-size: 19px;
+    text-align: center;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.project-image .project-icon {
+    font-size: 43px;
+}
+
+/* INFORMAÇÕES */
+
+.project-info {
+    padding: 27px;
+}
+
+.project-info small {
+    display: block;
+    color: #75db4b;
+    font-size: 9px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 13px;
+}
+
+.project-info h3 {
+    color: #f0f5ed;
+    font-size: 21px;
+    margin: 0 0 12px;
+}
+
+.project-info p {
+    color: #a5b0a5;
+    font-size: 13px;
+    line-height: 1.8;
+    min-height: 65px;
+    margin-bottom: 22px;
+}
+
+/* TECNOLOGIAS */
+
+.project-info > span {
+    display: inline-block;
+
+    color: #91e276;
+    background: #253c28;
+
+    border: 1px solid #426a3b;
+
+    font-size: 10px;
+    font-weight: bold;
+
+    padding: 6px 10px;
+    margin: 3px 4px 3px 0;
+
+    border-radius: 3px;
+}
+
+/* BOTÃO */
+
+.project-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: fit-content;
+
+    margin-top: 25px;
+    padding: 12px 20px;
+
+    background: #75db4b;
+    color: #101810;
+
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 800;
+
+    border: 1px solid #75db4b;
+    border-radius: 4px;
+
+    transition: .3s ease;
+}
+
+.project-link:hover {
+    background: transparent;
+    color: #75db4b;
+    transform: translateX(5px);
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 750px) {
+
+    .projects {
+        padding: 70px 5%;
+    }
+
+    .projects h2 {
+        font-size: 29px;
+    }
+
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+
+    .project-image {
+        height: 145px;
+    }
+
+}
+
