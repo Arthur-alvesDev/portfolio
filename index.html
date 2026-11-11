@@ -110,46 +110,70 @@
         <h2>QUEM ESTÁ <em>JOGANDO?</em></h2>
       </div>
 
-      <div class="about-grid">
+     <div class="about-grid">
 
-        <div class="avatar-panel">
-          <div class="avatar-frame">
-            <div class="avatar">AA</div>
+    <!-- FOTO -->
+    <div class="avatar-panel">
+
+        <div class="avatar-frame">
+            <div class="avatar">
+                <img src="perfil.png.jpeg"
+                     alt="Foto de Arthur Alves">
+            </div>
+
             <span class="avatar-tag">PLAYER 001</span>
-          </div>
-
-          <div class="status">
-            <span class="status-dot"></span>
-            DISPONÍVEL PARA APRENDER E COLABORAR
-          </div>
         </div>
 
-        <div class="about-text">
-          <p class="lead">Prazer, Arthur! 👋</p>
+        <div class="status">
+            <span class="status-dot"></span>
+            DISPONÍVEL PARA APRENDER E COLABORAR
+        </div>
 
-          <p>
+    </div>
+
+    <!-- TEXTO -->
+    <div class="about-text">
+
+        <p class="lead">Prazer, Arthur! 👋</p>
+
+        <p>
             Sou estudante de <strong>Informática no CEET Vasco Coutinho</strong>,
             atualmente no segundo módulo. Tenho interesse em programação,
             desenvolvimento web, criação de sistemas e banco de dados.
-          </p>
+        </p>
 
-          <p>
+        <p>
             Assim como em um mundo aberto, gosto de explorar possibilidades,
             enfrentar desafios e construir soluções passo a passo.
             Estou no começo da minha jornada profissional e sigo ampliando
             meus conhecimentos por meio de estudos e projetos práticos.
-          </p>
+        </p>
 
-          <div class="info-grid">
-            <div><small>FORMAÇÃO</small><strong>Informática</strong></div>
-            <div><small>INSTITUIÇÃO</small><strong>CEET Vasco Coutinho</strong></div>
-            <div><small>MÓDULO</small><strong>2º módulo</strong></div>
-            <div><small>LOCALIZAÇÃO</small><strong>Vila Velha — ES</strong></div>
-          </div>
+        <div class="info-grid">
+            <div>
+                <small>FORMAÇÃO</small>
+                <strong>Informática</strong>
+            </div>
+
+            <div>
+                <small>INSTITUIÇÃO</small>
+                <strong>CEET Vasco Coutinho</strong>
+            </div>
+
+            <div>
+                <small>MÓDULO</small>
+                <strong>2º módulo</strong>
+            </div>
+
+            <div>
+                <small>LOCALIZAÇÃO</small>
+                <strong>Vila Velha — ES</strong>
+            </div>
         </div>
 
-      </div>
-    </section>
+    </div>
+
+</div>
 
     <!-- HABILIDADES -->
     <section class="section skills" id="habilidades">
@@ -230,89 +254,91 @@
     </section>
 
     <!-- PROJETOS -->
-    <section class="section projects" id="projetos">
+    
+<section id="projetos" class="projects">
 
-      <div class="section-heading">
-        <span class="section-index">03 / CONSTRUÇÕES</span>
-        <h2>PROJETOS EM <em>DESTAQUE</em></h2>
-      </div>
+    <h2>PROJETOS EM DESTAQUE</h2>
 
-      <p class="section-desc">
-        Algumas construções e missões que fazem parte do meu percurso.
-      </p>
+    <div class="projects-container">
 
-      <div class="project-grid">
+        <!-- PROJETO RESTAURANTE -->
+        <div class="project-card">
 
-        <article class="project-card">
-          <div class="project-art shop-art">
-            <span>🛒</span><b>LOJA</b>
-          </div>
-          <div class="project-content">
-            <span class="project-type">SISTEMA • PYTHON</span>
-            <h3>Sistema de Loja</h3>
-            <p>
-              Projeto de compras com catálogo de produtos, carrinho,
-              remoção de itens e finalização.
-            </p>
-            <div class="tags">
-              <span>Python</span><span>Lógica</span>
+            <div class="project-image">
+                🛒
+                <h3>SITE DE BAR E RESTUARANTE</h3>
             </div>
-          </div>
-        </article>
 
-        <article class="project-card">
-          <div class="project-art food-art">
-            <span>🍽️</span><b>RESTAURANTE</b>
-          </div>
-          <div class="project-content">
-            <span class="project-type">SISTEMA • MODELAGEM</span>
-            <h3>Sistema de Restaurante</h3>
-            <p>
-              Proposta de gerenciamento de mesas, reservas, estoque,
-              caixa e relatórios.
-            </p>
-            <div class="tags">
-              <span>Sistemas</span><span>Banco de dados</span>
+            <div class="project-info">
+
+                <small>SITE • HMTL • CSS</small>
+
+                <h3>Site de Bar e Restaurante</h3>
+
+                <p>
+                  Site institucional desenvolvido para um bar e restaurante, 
+                  com identidade visual inspirada nos tradicionais pontos de
+                   ônibus do Espírito Santo, trazendo cores e elementos característicos
+                    do transporte capixaba em um design moderno e criativo.
+                </p>
+
+                <span>CSS</span>
+                <span>HTML</span>
+
+                <a
+                    href="https://arthur-alvesdev.github.io/Bar_Restaurante/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="project-link">
+                    Acessar projeto →
+                </a>
+
             </div>
-          </div>
-        </article>
 
-        <article class="project-card">
-          <div class="project-art bus-art">
-            <span>🚌</span><b>PONTO DE ÔNIBUS</b>
-          </div>
-          <div class="project-content">
-            <span class="project-type">DESENVOLVIMENTO WEB</span>
-            <h3>Ponto de Ônibus</h3>
-            <p>
-              Site temático para um bar e restaurante capixaba,
-              com identidade visual inspirada no transporte urbano.
-            </p>
-            <div class="tags">
-              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+        </div>
+
+
+        <!-- PROJETO FUNERÁRIA -->
+        <div class="project-card">
+
+            <div class="project-image">
+                💾
+                <h3>FUNERÁRIA</h3>
             </div>
-          </div>
-        </article>
 
-        <article class="project-card">
-          <div class="project-art database-art">
-            <span>💾</span><b>CADASTRO</b>
-          </div>
-          <div class="project-content">
-            <span class="project-type">APLICAÇÃO • C# / MYSQL</span>
-            <h3>Sistema de Cadastro</h3>
-            <p>
-              Aplicação de cadastro de candidatos com conexão
-              a banco de dados MySQL.
-            </p>
-            <div class="tags">
-              <span>C#</span><span>MySQL</span>
+            <div class="project-info">
+
+                <small>SITE • HTML • CSS</small>
+
+                <h3>Site de Funerária</h3>
+
+                <p>
+                    Site institucional da Funerária
+                    Sonho Vivo, com homenagens
+                    audiovisuais e preservação
+                    de memórias.
+                </p>
+
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JAVASCRIPT</span>
+
+                <a
+                    href="https://arthur-alvesdev.github.io/Funeraria-SonhoVivo/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="project-link">
+                    Acessar projeto →
+                </a>
+
             </div>
-          </div>
-        </article>
 
-      </div>
-    </section>
+        </div>
+
+    </div>
+
+</section>
+
 
     <!-- MISSÕES -->
     <section class="section quests">
